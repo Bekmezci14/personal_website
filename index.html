@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkin Bekmezci - Computer Engineer & Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #fafafa;
+            --text: #1a1a1a;
+            --text-light: #666;
+            --border: #e0e0e0;
+            --accent: #2563eb;
+            --accent-light: #eff6ff;
+            --card-bg: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        header {
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            color: var(--text);
+        }
+
+        .tagline {
+            font-size: 1.125rem;
+            color: var(--text-light);
+            margin-bottom: 24px;
+        }
+
+        .contact-info {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 12px;
+        }
+
+        .contact-info a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .location {
+            color: var(--text-light);
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: var(--text);
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--border);
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 24px;
+            margin-bottom: 16px;
+        }
+
+        .card-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            gap: 16px;
+        }
+
+        .card-title {
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .card-subtitle {
+            font-size: 0.95rem;
+            color: var(--accent);
+            margin-top: 4px;
+        }
+
+        .card-date {
+            font-size: 0.875rem;
+            color: var(--text-light);
+            white-space: nowrap;
+        }
+
+        .card-description {
+            font-size: 0.95rem;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 24px;
+        }
+
+        .skill-category h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text);
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skill-tag {
+            font-size: 0.875rem;
+            padding: 6px 12px;
+            background: var(--accent-light);
+            color: var(--accent);
+            border-radius: 6px;
+        }
+
+        .activities-list {
+            display: grid;
+            gap: 16px;
+        }
+
+        .activity-item {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        .activity-item h3 {
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 6px;
+            color: var(--text);
+        }
+
+        .activity-item p {
+            font-size: 0.95rem;
+            color: var(--text-light);
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 40px;
+            margin-top: 60px;
+            border-top: 1px solid var(--border);
+            color: var(--text-light);
+            font-size: 0.875rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 40px 20px;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            .card-header {
+                flex-direction: column;
+            }
+
+            .card-date {
+                white-space: normal;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Arkin Bekmezci</h1>
+            <p class="tagline">Computer Engineer & Full-Stack Developer</p>
+            <div class="contact-info">
+                <a href="mailto:arkinbekmezci@gmail.com">arkinbekmezci@gmail.com</a>
+                <a href="https://linkedin.com/in/arkin-bekmezci" target="_blank">LinkedIn</a>
+                <a href="https://github.com/Bekmezci14" target="_blank">GitHub</a>
+            </div>
+            <p class="location">Ankara, Türkiye</p>
+        </header>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <div class="card-title">Middle East Technical University (METU)</div>
+                        <div class="card-subtitle">Computer Engineering</div>
+                    </div>
+                    <div class="card-date">2022 – Present</div>
+                </div>
+                <p class="card-description">BSc 3rd year student, CGPA: 3.72</p>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <div class="card-title">Middle East Technical University (METU)</div>
+                        <div class="card-subtitle">Mathematics Minor</div>
+                    </div>
+                    <div class="card-date">2025 – Present</div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <div class="card-title">Ankara Atatürk Anadolu Lisesi</div>
+                        <div class="card-subtitle">High School</div>
+                    </div>
+                    <div class="card-date">2018 – 2022</div>
+                </div>
+                <p class="card-description">Graduation grade: 98.14</p>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Employment History</h2>
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <div class="card-title">TUSAŞ (TAI)</div>
+                        <div class="card-subtitle">Candidate Engineer</div>
+                    </div>
+                    <div class="card-date">11/2025 – Present</div>
+                </div>
+                <p class="card-description">Implemented various algorithms in MATLAB based on research papers</p>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <div class="card-title">MetuApp</div>
+                        <div class="card-subtitle">Mobile Developer</div>
+                    </div>
+                    <div class="card-date">09/2025 – Present</div>
+                </div>
+                <p class="card-description">Maintained Flutter application and developed new apps using Django</p>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <div class="card-title">Nanodems</div>
+                        <div class="card-subtitle">Full-Stack Developer Internship</div>
+                    </div>
+                    <div class="card-date">06/2025 – 08/2025</div>
+                </div>
+                <p class="card-description">Full-stack web development using C#, Blazor, and the .NET Framework</p>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <div>
+                        <div class="card-title">Zephyr Cove Resort</div>
+                        <div class="card-subtitle">Prep Cook (Nevada, USA)</div>
+                    </div>
+                    <div class="card-date">06/2024 – 10/2024</div>
+                </div>
+                <p class="card-description">International work experience through the Work and Travel program</p>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Turkish (Native)</span>
+                        <span class="skill-tag">English (Proficient)</span>
+                        <span class="skill-tag">German (Beginner)</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Programming</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C</span>
+                        <span class="skill-tag">C++</span>
+                        <span class="skill-tag">C#</span>
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">MATLAB</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Frameworks & Libraries</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">ASP.NET</span>
+                        <span class="skill-tag">Django</span>
+                        <span class="skill-tag">Tkinter</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">NumPy</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Tools & Technologies</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">REST APIs</span>
+                        <span class="skill-tag">Azure</span>
+                        <span class="skill-tag">Linux & Unix</span>
+                        <span class="skill-tag">Git</span>
+                        <span class="skill-tag">Bootstrap</span>
+                        <span class="skill-tag">LaTeX</span>
+                        <span class="skill-tag">Godot</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="activities">
+            <h2>Activities & Interests</h2>
+            <div class="activities-list">
+                <div class="activity-item">
+                    <h3>Game Development</h3>
+                    <p>Developing an automation game using Godot</p>
+                </div>
+                <div class="activity-item">
+                    <h3>Teknofest 2025</h3>
+                    <p>Flying Car Simulation Competition University Category METURONE team</p>
+                </div>
+                <div class="activity-item">
+                    <h3>Theater Technician</h3>
+                    <p>AAAL Theatre Society 2019</p>
+                </div>
+                <div class="activity-item">
+                    <h3>Fitness</h3>
+                    <p>Going to the university gym regularly</p>
+                </div>
+                <div class="activity-item">
+                    <h3>Drawing/Painting</h3>
+                    <p>Free-hand pencil drawing and acrylic painting</p>
+                </div>
+                <div class="activity-item">
+                    <h3>Travel</h3>
+                    <p>Traveling across the world and seeing different cultures</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Last updated in February 2026</p>
+        </footer>
+    </div>
+</body>
+</html>
